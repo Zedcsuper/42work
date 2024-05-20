@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void ft_print_comb_recursive(int a, int b, int c);
+
+int main() {
+    ft_print_comb_recursive(0, 1, 2);
+    printf("\n");
+    return 0;
+}
+
+void ft_print_comb_recursive(int a, int b, int c) {
+    printf("%d%d%d", a, b, c);
+    if (a == 7 && b == 8 && c == 9) {
+        return; // Base case: stop recursion
+    } else {
+        printf(", ");
+    }
+
+    // Update digits for the next recursion
+    if (c < 9) {
+        ft_print_comb_recursive(a, b, c + 1);
+    } else if (b < 8) {
+        ft_print_comb_recursive(a, b + 1, b + 2);
+    } else if (a < 7) {
+        ft_print_comb_recursive(a + 1, a + 2, a + 3);
+    }
+}
