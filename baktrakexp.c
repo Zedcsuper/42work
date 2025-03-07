@@ -1,12 +1,10 @@
-#include<stdio.h>
-#include "naruto.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-#define N	1
-
-void	binNarutoHelper(uint8_t idx, uint8_t digits, char *v)
+void	binNarutoHelper(char idx, char digits, char *v)
 {
 	if (idx == digits)
-		p("%s\n", v);
+		printf("%s\n", v);
 	else
 	{
 		v[idx] = '0';
@@ -16,7 +14,7 @@ void	binNarutoHelper(uint8_t idx, uint8_t digits, char *v)
 	}
 }	
 
-void	binNaruto(uint8_t digits)
+void	binNaruto(char digits)
 {
 	char	*v;
 
@@ -32,6 +30,5 @@ void	binNaruto(uint8_t digits)
 
 int	main()
 {
-	binNaruto(N);
+	binNaruto(2);
 }
-
