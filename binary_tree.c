@@ -1,11 +1,4 @@
 
-Sign in
-Sign up
-Instantly share code, notes, and snippets.
-
-tsprates/binary-tree.c
-Last active 5 months ago
-
 //A Binary Tree implementation in C
 //binary-tree.c
 // Binary Tree
